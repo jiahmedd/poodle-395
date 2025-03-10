@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Poodle Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class = "search_options">
+            <div id = "submit">
+                <button type = "button" id = "search_more" onclick="window.location.href = 'index.html';">Poodle Search</button>
+                <button type = "button" id = "search_more" onclick="window.location.href = 'imageSearch.html';">Images</button>
+            </div>
+        </div>
+
+        <div class = "advanced_search_disp">
+            <div id = "image">
+                <img src="assets/logo.png">
+            </div>
+            <div id = "header1-advanced">
+                <h2>Advanced Search</h2>        
+            </div>
+            <h3>Find pages with... </h3>
+        </div>
+
+        
+
+        <div class = "advanced_search_buttons">
+        <form action="https://www.google.com/search" method = "GET">
+            <div id = "all-words">
+                <label for="all-words" id = "id-all-words"> all these words: </label>
+                <input type="text" id="search_bar" name="as_q">
+            </div>    
+            <div id = "exact-phrase">
+                <label for="exact-phrase"> this exact word or phrase: </label>
+                <input type="text" id="search_bar" name="as_epq">
+            </div>
+            <div id = "any-words">
+                <label for="any-words"> any of these words: </label>
+                <input type="text" id="search_bar" name="as_oq">
+            </div>
+            <div id = "none-words">
+                <label for="none-words"> none of these words: </label>
+                <input type="text" id="search_bar" name="as_eq">
+            </div>
+            <input type="submit" hidden />
+        </form>
+        </div>
+        
+
+    </body>
+</html>

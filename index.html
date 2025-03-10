@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Poodle Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class = "search_options">
+            <div id = "submit">
+            <button type = "button" id = "search_more" onclick="window.location.href = 'imageSearch.html';">Images</button>
+            <button type = "button" id = "search_more" onclick="window.location.href = 'advancedSearch.html';"">Advanced Search</button>
+            </div>
+        </div>
+        
+        <div class = "center_display">
+        <div id = "image">
+            <img src="assets/logo.png">
+        </div>
+        <div class = "search_buttons">
+        <form action="https://www.google.com/search" method = "GET">
+            <input type="text" id = "search_bar" name="q">
+            <div id = "submit">
+            <input type="submit" id = "search" value="Poodle Search">
+            <input type = "submit" id = "search" name = "btnI" value = "I'm Feeling Lucky">
+            </div>
+        </form>
+        </div>
+        </div>
+
+    </body>
+</html>
